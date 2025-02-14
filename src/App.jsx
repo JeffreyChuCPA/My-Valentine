@@ -19,16 +19,16 @@ function App() {
       <div className="flex flex-col justify-center items-center m-auto h-screen relative">
         {answer === "" ? (
           <>
+            <div className="font-semibold text-3xl text-center relative">
+              Will you be my Valentine?
             <img
               src={fingers}
-              className="absolute top-[10vh] left-[10vw] size-28 rotate-animation"
+              className="absolute bottom-[14vh] left-[10vw] size-28 rotate-animation"
             />
             <img
               src={kirby}
-              className="absolute top-[17vh] right-[10vw] size-28"
+              className="absolute bottom-[6vh] right-[10vw] size-28"
             />
-            <div className="font-semibold text-3xl">
-              Will you be my Valentine?
             </div>
             <img src={chikawa} />
             <div className="flex gap-5 mt-5 relative">
