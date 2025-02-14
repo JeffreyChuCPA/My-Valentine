@@ -31,7 +31,7 @@ function App() {
               Will you be my Valentine?
             </div>
             <img src={chikawa} />
-            <div className="flex gap-5 mt-5">
+            <div className="flex gap-5 mt-5 relative">
               <button
                 className="border py-1 px-3 bg-green-600 w-16 rounded-md"
                 onClick={() => setAnswer("yes")}>
@@ -42,11 +42,11 @@ function App() {
                 onClick={() => setAnswer("no")}>
                 No
               </button>
+              <img
+                src={anya}
+                className="absolute top-[2vh] right-[25vw] size-36 -rotate-12 -z-10"
+              />
             </div>
-            <img
-              src={anya}
-              className="absolute bottom-[19vh] left-[7vw] size-36 -rotate-6 -z-10"
-            />
           </>
         ) : (
           <Result answer={answer} setAnswer={setAnswer} />
@@ -57,6 +57,7 @@ function App() {
 }
 
 export default App
+
 
 
 
